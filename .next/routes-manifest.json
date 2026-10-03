@@ -1,0 +1,314 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/patients/[patientId]",
+      "regex": "^/api/patients/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPpatientId": "nxtPpatientId"
+      },
+      "namedRegex": "^/api/patients/(?<nxtPpatientId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/patients/[patientId]/password",
+      "regex": "^/api/patients/([^/]+?)/password(?:/)?$",
+      "routeKeys": {
+        "nxtPpatientId": "nxtPpatientId"
+      },
+      "namedRegex": "^/api/patients/(?<nxtPpatientId>[^/]+?)/password(?:/)?$"
+    },
+    {
+      "page": "/api/patients/[patientId]/records",
+      "regex": "^/api/patients/([^/]+?)/records(?:/)?$",
+      "routeKeys": {
+        "nxtPpatientId": "nxtPpatientId"
+      },
+      "namedRegex": "^/api/patients/(?<nxtPpatientId>[^/]+?)/records(?:/)?$"
+    },
+    {
+      "page": "/app/games/[gameId]",
+      "regex": "^/app/games/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPgameId": "nxtPgameId"
+      },
+      "namedRegex": "^/app/games/(?<nxtPgameId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/care/patients/[patientId]",
+      "regex": "^/care/patients/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPpatientId": "nxtPpatientId"
+      },
+      "namedRegex": "^/care/patients/(?<nxtPpatientId>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/auth/demo",
+      "regex": "^/api/auth/demo(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/demo(?:/)?$"
+    },
+    {
+      "page": "/api/auth/demo/reset",
+      "regex": "^/api/auth/demo/reset(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/demo/reset(?:/)?$"
+    },
+    {
+      "page": "/api/auth/login",
+      "regex": "^/api/auth/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/login(?:/)?$"
+    },
+    {
+      "page": "/api/auth/logout",
+      "regex": "^/api/auth/logout(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/logout(?:/)?$"
+    },
+    {
+      "page": "/api/auth/password",
+      "regex": "^/api/auth/password(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/password(?:/)?$"
+    },
+    {
+      "page": "/api/auth/register",
+      "regex": "^/api/auth/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/register(?:/)?$"
+    },
+    {
+      "page": "/api/auth/session",
+      "regex": "^/api/auth/session(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/session(?:/)?$"
+    },
+    {
+      "page": "/api/caregiver",
+      "regex": "^/api/caregiver(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/caregiver(?:/)?$"
+    },
+    {
+      "page": "/api/patients",
+      "regex": "^/api/patients(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/patients(?:/)?$"
+    },
+    {
+      "page": "/app",
+      "regex": "^/app(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/app(?:/)?$"
+    },
+    {
+      "page": "/app/care-circle",
+      "regex": "^/app/care\\-circle(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/app/care\\-circle(?:/)?$"
+    },
+    {
+      "page": "/app/games",
+      "regex": "^/app/games(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/app/games(?:/)?$"
+    },
+    {
+      "page": "/app/my-day",
+      "regex": "^/app/my\\-day(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/app/my\\-day(?:/)?$"
+    },
+    {
+      "page": "/app/planner",
+      "regex": "^/app/planner(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/app/planner(?:/)?$"
+    },
+    {
+      "page": "/app/progress",
+      "regex": "^/app/progress(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/app/progress(?:/)?$"
+    },
+    {
+      "page": "/app/reminders",
+      "regex": "^/app/reminders(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/app/reminders(?:/)?$"
+    },
+    {
+      "page": "/app/settings",
+      "regex": "^/app/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/app/settings(?:/)?$"
+    },
+    {
+      "page": "/care",
+      "regex": "^/care(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/care(?:/)?$"
+    },
+    {
+      "page": "/care/activity",
+      "regex": "^/care/activity(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/care/activity(?:/)?$"
+    },
+    {
+      "page": "/care/alerts",
+      "regex": "^/care/alerts(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/care/alerts(?:/)?$"
+    },
+    {
+      "page": "/care/circle",
+      "regex": "^/care/circle(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/care/circle(?:/)?$"
+    },
+    {
+      "page": "/care/family",
+      "regex": "^/care/family(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/care/family(?:/)?$"
+    },
+    {
+      "page": "/care/insights",
+      "regex": "^/care/insights(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/care/insights(?:/)?$"
+    },
+    {
+      "page": "/care/patients",
+      "regex": "^/care/patients(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/care/patients(?:/)?$"
+    },
+    {
+      "page": "/care/performance",
+      "regex": "^/care/performance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/care/performance(?:/)?$"
+    },
+    {
+      "page": "/care/profile",
+      "regex": "^/care/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/care/profile(?:/)?$"
+    },
+    {
+      "page": "/care/progress",
+      "regex": "^/care/progress(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/care/progress(?:/)?$"
+    },
+    {
+      "page": "/care/reminders",
+      "regex": "^/care/reminders(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/care/reminders(?:/)?$"
+    },
+    {
+      "page": "/care/settings",
+      "regex": "^/care/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/care/settings(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/language",
+      "regex": "^/language(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/language(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/offline",
+      "regex": "^/offline(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/offline(?:/)?$"
+    },
+    {
+      "page": "/role",
+      "regex": "^/role(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/role(?:/)?$"
+    },
+    {
+      "page": "/setup",
+      "regex": "^/setup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/setup(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

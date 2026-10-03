@@ -1,0 +1,3 @@
+module.exports=[56953,a=>{"use strict";a.s(["PatientShell",()=>b]);let b=(0,a.i(11857).registerClientReference)(function(){throw Error("Attempted to call PatientShell() from the server but PatientShell is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/components/layout/patient-shell.tsx","PatientShell")},13678,a=>{"use strict";var b=a.i(56953);a.n(b)},28603,a=>{"use strict";var b=a.i(7997),c=a.i(13678);a.s(["default",0,function({children:a}){return(0,b.jsx)(c.PatientShell,{children:a})}])},93782,function(a){a.n(a.i(28603))}];
+
+//# sourceMappingURL=_1-fhznt._.js.map

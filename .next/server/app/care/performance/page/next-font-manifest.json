@@ -1,0 +1,13 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/app/care/performance/page": [
+      "static/media/07454f8ad8aaac57-s.p.2kjei9psvcorz.woff2",
+      "static/media/a6041e237e27a445-s.p.2lwxdxizmwehf.woff2",
+      "static/media/e92fa6abd9c612ef-s.p.30axz4qhm1rgm.woff2",
+      "static/media/6ea8d1bb8ea4af7a-s.p.1kk_wfe381bov.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}

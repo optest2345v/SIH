@@ -1,0 +1,3 @@
+module.exports=[14183,a=>{"use strict";a.s(["CaregiverShell",()=>b]);let b=(0,a.i(11857).registerClientReference)(function(){throw Error("Attempted to call CaregiverShell() from the server but CaregiverShell is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/components/layout/caregiver-shell.tsx","CaregiverShell")},26556,a=>{"use strict";var b=a.i(14183);a.n(b)},84909,a=>{"use strict";var b=a.i(7997),c=a.i(26556);a.s(["default",0,function({children:a}){return(0,b.jsx)(c.CaregiverShell,{children:a})}])},55515,function(a){a.n(a.i(84909))}];
+
+//# sourceMappingURL=_1i0_i7w._.js.map
