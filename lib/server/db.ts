@@ -128,7 +128,17 @@ export function isRecordKind(value: string): value is RecordKind {
 const globalForDb = globalThis as unknown as { __elderEaseDb?: DatabaseSync };
 
 function open(): DatabaseSync {
-  const file = path.join(process.cwd(), 'data', 'elderease.db');
+  // On Vercel / serverless, process.cwd() is read-only.
+  // os.tmpdir() (/tmp) is the only writable directory.
+  const isServerless = Boolean(
+    process.env.VERCEL ||
+    process.env.AWS_LAMBDA_FUNCTION_NAME ||
+    process.env.VERCEL_ENV
+  );
+  const file = isServerless
+    ? path.join(os.tmpdir(), 'elderease.db')
+    : path.join(process.cwd(), 'data', 'elderease.db');
+
   mkdirSync(path.dirname(file), { recursive: true });
   const db = new DatabaseSync(file);
   db.exec(SCHEMA);
